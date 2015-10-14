@@ -1,0 +1,432 @@
+# write content above this only
+#blog:
+
+def blog8137(request):
+    return render(request, 'tohfa/blog8137.html')
+
+def blogfa1b(request):
+    return render(request, 'tohfa/blogfa1b.html')
+
+def blogb063(request):
+    return render(request, 'tohfa/blogb063.html')
+
+def blog166d(request):
+    return render(request, 'tohfa/blog166d.html')
+
+def blogdba8(request):
+    return render(request, 'tohfa/blogdba8.html')
+
+def blog4a11(request):
+    return render(request, 'tohfa/blog4a11.html')
+
+def blog5cce(request):
+    return render(request, 'tohfa/blog5cce.html')
+
+def blog8e74(request):
+    return render(request, 'tohfa/blog8e74.html')
+
+def blog77cd(request):
+    return render(request, 'tohfa/blog77cd.html')
+
+#login:
+    
+def loginfd9a(request):
+    return render(request, 'tohfa/loginfd9a.html')
+
+def login1c43(request):
+    return render(request, 'tohfa/login1c43.html')
+
+def login2a5f(request):
+    return render(request, 'tohfa/login2a5f.html')
+
+def login4b0c(request):
+    return render(request, 'tohfa/login4b0c.html')
+
+def login5e5b(request):
+    return render(request, 'tohfa/login5e5b.html')
+
+def login7bf9(request):
+    return render(request, 'tohfa/login7bf9.html')
+
+def login8b78(request):
+    return render(request, 'tohfa/login8b78.html')
+
+def login56f5(request):
+    return render(request, 'tohfa/login56f5.html')
+
+def login81b5(request):
+    return render(request, 'tohfa/login81b5.html')
+
+def login99ba(request):
+    return render(request, 'tohfa/login99ba.html')
+
+def login0284(request):
+    return render(request, 'tohfa/login0284.html')
+
+def login546a(request):
+    return render(request, 'tohfa/login546a.html')
+
+def login984c(request):
+    return render(request, 'tohfa/login984c.html')
+
+def login4248(request):
+    return render(request, 'tohfa/login4248.html')
+
+def logind1ad(request):
+    return render(request, 'tohfa/logind1ad.html')
+
+def loginea01(request):
+    return render(request, 'tohfa/loginea01.html')
+
+def loginebb8(request):
+    return render(request, 'tohfa/loginebb8.html')
+
+
+#order:
+
+def order1f77(request):
+    return render(request, 'tohfa/order1f77.html')
+
+def order9ad2(request):
+    return render(request, 'tohfa/order9ad2.html')
+
+def order9e10(request):
+    return render(request, 'tohfa/order9e10.html')
+
+def order12d5(request):
+    return render(request, 'tohfa/order12d5.html')
+
+def order37e9(request):
+    return render(request, 'tohfa/order37e9.html')
+
+def order77ae(request):
+    return render(request, 'tohfa/order77ae.html')
+
+def order515d(request):
+    return render(request, 'tohfa/order515d.html')
+
+def order1518(request):
+    return render(request, 'tohfa/order1518.html')
+
+def order3207(request):
+    return render(request, 'tohfa/order3207.html')
+
+def order8636(request):
+    return render(request, 'tohfa/order8636.html')
+
+def order9543(request):
+    return render(request, 'tohfa/order9543.html')
+
+def order9550(request):
+    return render(request, 'tohfa/order9550.html')
+
+def order9624(request):
+    return render(request, 'tohfa/order9624.html')
+
+def ordera1f3(request):
+    return render(request, 'tohfa/ordera1f3.html')
+
+def orderb1da(request):
+    return render(request, 'tohfa/orderb1da.html')
+
+def orderc4c4(request):
+    return render(request, 'tohfa/orderc4c4.html')
+
+def ordercfb7(request):
+    return render(request, 'tohfa/ordercfb7.html')
+
+def ordere04f(request):
+    return render(request, 'tohfa/ordere04f.html')
+
+
+#blog:
+
+def category1_c17(request):
+    return render(request, 'tohfa/category-1-c17.html')
+
+def category1_c29(request):
+    return render(request, 'tohfa/category-1-c29.html')
+
+def sub_category1_c18(request):
+    return render(request, 'tohfa/sub-category-1-c18.html')
+
+def sub_category1_c30(request):
+    return render(request, 'tohfa/sub-category-1-c30.html')
+
+def at_risus_pretium_urna_tortor_metus_fringilla_b32(request):
+    return render(request, 'tohfa/at-risus-pretium-urna-tortor-metus-fringilla-b32.html')
+
+def at_risus_pretium_urna_tortor_metus_fringilla_b53(request):
+    return render(request, 'tohfa/at-risus-pretium-urna-tortor-metus-fringilla-b53.html')
+
+def at_risus_pretium_urna_tortor_metus_fringilla_b60(request):
+    return render(request, 'tohfa/at-risus-pretium-urna-tortor-metus-fringilla-b60.html')
+
+def morbi_condimentum_molestie_nam_enim_odio_sodales_b54(request):
+    return render(request, 'tohfa/morbi-condimentum-molestie-nam-enim-odio-sodales-b54.html')
+
+def morbi_condimentum_molestie_nam_enim_odio_sodales_b57(request):
+    return render(request, 'tohfa/morbi-condimentum-molestie-nam-enim-odio-sodales-b57.html')
+
+def morbi_condimentum_molestie_nam_enim_odio_sodales_b61(request):
+    return render(request, 'tohfa/morbi-condimentum-molestie-nam-enim-odio-sodales-b61.html')
+
+def morbi_condimentum_molestie_nam_enim_odio_sodales_b64(request):
+    return render(request, 'tohfa/morbi-condimentum-molestie-nam-enim-odio-sodales-b64.html')
+
+def urna_pretium_elit_mauris_cursus_curabitur_at_elit_vestibulum_b55(request):
+    return render(request, 'tohfa/urna-pretium-elit-mauris-cursus-curabitur-at-elit-vestibulum-b55.html')
+
+def urna_pretium_elit_mauris_cursus_curabitur_at_elit_vestibulum_b56(request):
+    return render(request, 'tohfa/urna-pretium-elit-mauris-cursus-curabitur-at-elit-vestibulum-b56.html')
+
+def urna_pretium_elit_mauris_cursus_curabitur_at_elit_vestibulum_b63(request):
+    return render(request, 'tohfa/urna-pretium-elit-mauris-cursus-curabitur-at-elit-vestibulum-b63.html')
+
+def turpis_at_eleifend_leo_mi_elit_aenean_porta_ac_sed_faucibus_b65(request):
+    return render(request, 'tohfa/turpis-at-eleifend-leo-mi-elit-aenean-porta-ac-sed-faucibus-b65.html')
+
+def turpis_at_eleifend_leo_mi_elit_aenean_porta_ac_sed_faucibus_b58(request):
+    return render(request, 'tohfa/turpis-at-eleifend-leo-mi-elit-aenean-porta-ac-sed-faucibus-b58.html')
+
+def nullam_ullamcorper_nisl_quis_ornare_molestie_b59(request):
+    return render(request, 'tohfa/nullam-ullamcorper-nisl-quis-ornare-molestie-b59.html')
+
+def nullam_ullamcorper_nisl_quis_ornare_molestie_b66(request):
+    return render(request, 'tohfa/nullam-ullamcorper-nisl-quis-ornare-molestie-b66.html')
+
+
+
+
+#summer dresses
+
+def printed_summer_dress_10(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/10-printed-summer-dress.html', context)
+
+def printed_summer_dress_11(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+
+    return render(request, 'tohfa/11-printed-summer-dress.html', context)
+
+def printed_summer_dress_12(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+
+    return render(request, 'tohfa/12-printed-summer-dress.html', context)
+
+def printed_summer_dress_13(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+
+    return render(request, 'tohfa/13-printed-summer-dress.html', context)
+
+def printed_summer_dress_14(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+
+    return render(request, 'tohfa/14-printed-summer-dress.html', context)
+
+def printed_summer_dress_15(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/15-printed-summer-dress.html', context)
+
+def printed_summer_dress_16(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/16-printed-summer-dress.html', context)
+
+def printed_chiffon_dress_17(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/17-printed-chiffon-dress.html', context)
+
+def printed_summer_dress_18(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/18-printed-summer-dress.html', context)
+
+def printed_summer_dress_19(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/19-printed-summer-dress.html', context)
+
+def printed_summer_dress_20(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/20-printed-summer-dress.html', context)
+
+def printed_summer_dress_21(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/21-printed-summer-dress.html', context)
+
+def printed_summer_dress_22(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/22-printed-summer-dress.html', context)
+
+def printed_summer_dress_23(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/23-printed-summer-dress.html', context)
+
+def printed_summer_dress_24(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/24-printed-summer-dress.html', context)
+
+def printed_summer_dress_25(request):
+    list1 = Item.objects.filter(link = "related1")
+    list2 = Item.objects.filter(link = "related2")
+    list3 = Item.objects.filter(link = "related3")
+    list4 = Item.objects.filter(link = "related4")
+    context = {'list1': list1, 'list2': list2, 'list3': list3, 'list4': list4}
+    return render(request, 'tohfa/25-printed-summer-dress.html', context)
+
+#accessories:
+
+def printed_summer_dress_9(request):
+    return render(request, 'tohfa/9-printed-summer-dress.html')
+
+def printed_chiffon_dress_8(request):
+    return render(request, 'tohfa/8-printed-chiffon-dress.html')
+
+# item pages:
+
+def cards(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8)[:11]
+    context = {'list1': list1}
+    return render(request, 'tohfa/3-cards.html', context)
+
+def cards905b(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:5]
+    context = {'list1': list1}
+    return render(request, 'tohfa/3-cards905b.html', context)
+
+def relations(request):
+    return render(request, 'tohfa/4-relations.html')
+
+def brother(request):
+    return render(request, 'tohfa/5-brother.html')
+
+def friend(request):
+    return render(request, 'tohfa/6-friend.html')
+
+def husband(request):
+    return render(request, 'tohfa/7-husband.html')
+
+def ocassion(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8)[:12]
+    context = {'list1': list1}
+    return render(request, 'tohfa/8-ocassion.html', context)
+
+def ocassion905b(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:4]
+    context = {'list1': list1}
+    return render(request, 'tohfa/8-ocassion905b.html', context)
+
+def anniversary(request):
+    return render(request, 'tohfa/9-anniversary.html')
+
+def christmas(request):
+    return render(request, 'tohfa/10-christmas.html')
+
+def diwali(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8)[:12]
+    context = {'list1': list1}
+    return render(request, 'tohfa/11-diwali.html', context)
+
+def diwali905b(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:4]
+    context = {'list1': list1}
+    return render(request, 'tohfa/11-diwali905b.html', context)
+
+def blue_berry_cheese(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:4]
+    context = {'list1': list1}
+    return render(request, 'tohfa/12-blue_berry_cheese.html', context)
+
+def for_him(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:5]
+    context = {'list1': list1}
+    return render(request, 'tohfa/14-for_him.html', context)
+
+def for_her(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:6]
+    context = {'list1': list1}
+    return render(request, 'tohfa/15-for_her.html', context)
+
+def sorry(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:7]
+    context = {'list1': list1}
+    return render(request, 'tohfa/16-sorry.html', context)
+
+def accessories2(request):
+    return render(request, 'tohfa/21-accessories.html')
+
+def cakes(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:2]
+    context = {'list1': list1}
+    return render(request, 'tohfa/17-cakes.html', context)
+
+def red_velvet(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:2]
+    context = {'list1': list1}
+    return render(request, 'tohfa/18-red_velvet.html', context)
+
+def strawberry_cheese_cake(request):
+    list1 = Item.objects.all().exclude(item_name="icon").exclude(product_id=8).order_by('-product_id')[:2]
+    context = {'list1': list1}
+    return render(request, 'tohfa/19-strawberry_cheese_cake.html', context)
+
+def teddy_bears(request):
+    return render(request, 'tohfa/20-teddy_bears.html')

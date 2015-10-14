@@ -1,0 +1,119 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+    
+	<body id="authentication" class="authentication hide-right-column lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+			
+{% include 'tohfa/header.html' %}
+
+		
+							            
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<span class="navigation_page">	Authentication</span>
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+						
+			{% include 'tohfa/leftbar.html' %}
+
+<section id="center_column" class="col-md-9">
+  
+	<h1 class="page-heading">Authentication</h1>
+
+
+
+
+<!-- Steps -->
+<ul class="step clearfix" id="order_step">
+	<li class="col-md-2-4 col-xs-12 step_done_last step_done first">
+				<a href="order.html">
+			<em>01.</em> Summary
+		</a>
+			</li>
+	<li class="col-md-2-4 col-xs-12 step_current second">
+					<span><em>02.</em> Sign in</span>
+			</li>
+	<li class="col-md-2-4 col-xs-12 step_todo third">
+					<span><em>03.</em> Address</span>
+			</li>
+	<li class="col-md-2-4 col-xs-12 step_todo four">
+					<span><em>04.</em> Shipping</span>
+			</li>
+	<li id="step_end" class="col-md-2-4 col-xs-12 step_todo last">
+		<span><em>05.</em> Payment</span>
+	</li>
+</ul>
+<!-- /Steps -->
+
+
+	<!---->
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<form action="http://demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login" method="post" id="create-account_form" class="box">
+				<h3 class="page-subheading">Create an account</h3>
+				<div class="form_content clearfix">
+					<p>Please enter your email address to create an account.</p>
+					<div class="alert alert-danger" id="create_account_error" style="display:none"></div>
+					<div class="form-group">
+						<label for="email_create">Email address</label>
+						<input type="text" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name="email_create" value="" />
+					</div>
+					<div class="submit">
+						<input type="hidden" class="hidden" name="back" value="../de/login984c.html" />						<button class="btn btn-outline button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate">
+							<span>
+								<i class="fa fa-user left"></i>&nbsp;
+								Create an account
+							</span>
+						</button>
+						<input type="hidden" class="hidden" name="SubmitCreate" value="Create an account" />
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<form action="http://demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login" method="post" id="login_form" class="box">
+				<h3 class="page-subheading">Already registered?</h3>
+				<div class="form_content clearfix">
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="email" name="email" value="" />
+					</div>
+					<div class="form-group">
+						<label for="passwd">Password</label>
+						<span><input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="" /></span>
+					</div>
+					<p class="lost_password form-group"><a href="password-recovery.html" title="Recover your forgotten password" rel="nofollow">Forgot your password?</a></p>
+					<p class="submit">
+						<input type="hidden" class="hidden" name="back" value="../de/login984c.html" />						<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-outline button-medium">
+							<span>
+								<i class="fa fa-lock left"></i>&nbsp;
+								Sign in
+							</span>
+						</button>
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+									</section>
+
+
+                	</div>
+				</div>
+            </section>
+{% include 'tohfa/footer.html' %}
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login?back=my-account by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:34:01 GMT -->
+</html>

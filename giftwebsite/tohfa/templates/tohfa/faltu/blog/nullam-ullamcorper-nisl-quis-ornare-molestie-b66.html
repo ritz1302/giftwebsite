@@ -1,0 +1,195 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+	<body id="module-leoblog-blog" class="module-leoblog-blog hide-right-column lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+	{% include 'tohfa/header.html' %}
+
+		
+							            
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<a href="{% url 'blog' %}">Blog</a><span class="navigation-pipe">></span><a href="{% url 'sub_category1_c30' %}">Sub Category 1</a><span class="navigation-pipe">></span>Nullam ullamcorper nisl quis ornare molestie
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+		{% include 'tohfa/leftbar.html' %}
+
+<section id="center_column" class="col-md-9">
+  
+			
+	<div id="blogpage" class="blog-detail blog-container">
+		<div class="inner">
+						<h1 class="blog-title">Nullam ullamcorper nisl quis ornare molestie</h1>
+			<div class="blog-meta">
+								<span class="blog-author">
+					<span class="fa fa-user"> Posted By: </span>
+					<a href="{% url 'blogcd64' %}?author=1" title="Demo Demo">Demo Demo</a>
+				</span>
+				
+								<span class="blog-cat"> 
+					<span class="fa fa-list"> In: </span> 
+					<a href="{% url 'sub_category1_c30' %}" title="Sub Category 1">Sub Category 1</a>
+				</span>
+				
+								<span class="blog-created">
+					<span class="fa fa-calendar"> On: </span> 
+					Sunday, January 25, 2015
+				</span>
+								
+								<span class="blog-ctncomment">
+					<span class="fa fa-comment"> Comment:</span> 
+					0
+				</span>
+												<span class="blog-hit">
+					<span class="fa fa-heart"> Hit:</span>
+					335
+				</span>
+							</div>
+
+			
+
+
+						<div class="blog-description">
+			<p>Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit amet dictum ligula lorem non nisl. Ut vitae nibh id massa vulputate euismod ut quis justo. Ut bibendum sem at massa lacinia, eget elementum ante consectetur. Nulla id pharetra dui, at rhoncus urna. Maecenas non porttitor purus. Nullam ullamcorper nisl quis ornare molestie</p>
+			</div>
+			
+			<div class="blog-content">
+			<div class="description clearfix">
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas.</p>
+</div>
+<div class="blog-content clearfix">
+<div class="content-wrap clearfix">
+<p>Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit amet dictum ligula lorem non nisl. Ut vitae nibh id massa vulputate euismod ut quis justo. Ut bibendum sem at massa lacinia, eget elementum ante consectetur. Nulla id pharetra dui, at rhoncus urna. Maecenas non porttitor purus. Nullam ullamcorper nisl quis ornare molestie.</p>
+<p>Etiam eget erat est. Phasellus elit justo, mattis non lorem non, aliquam aliquam leo. Sed fermentum consectetur magna, eget semper ante. Aliquam scelerisque justo velit. Fusce cursus blandit dolor, in sodales urna vulputate lobortis. Nulla ut tellus turpis. Nullam lacus sem, volutpat id odio sed, cursus tristique eros. Duis at pellentesque magna. Donec magna nisi, vulputate ac nulla eu, ultricies tincidunt tellus. Nunc tincidunt sem urna, nec venenatis libero vehicula ut.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur faucibus aliquam pulvinar. Vivamus mattis volutpat erat, et congue nisi semper quis. Cras vehicula dignissim libero in elementum. Mauris sit amet dolor justo. Morbi consequat velit vel est fermentum euismod. Curabitur in magna augue.</p>
+</div>
+</div>	
+			</div>
+			
+			<div class="social-share">
+				  <div class="blog-social clearfix">
+		<div class="social-wrap">
+			<div class="social-heading"> <b>Like This</b> </div>
+						<!-- Twitter Button -->
+			<div class="itemTwitterButton">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" >
+					Twitter
+				</a>
+				<script type="text/javascript" src="{% static 'tohfa/platform.twitter.com/widgets.js' %}"></script>
+			</div>
+
+			 
+			<!-- Facebook Button -->
+			<div class="itemFacebookButton">
+				<div id="fb-root"></div>
+				<script type="text/javascript">
+					(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "{% static 'tohfa/connect.facebook.net/en_US/all.js' %}#xfbml=1";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+				<div class="fb-like" data-send="false" data-width="200" data-show-faces="true"></div>
+			</div>
+
+			 
+			 	<!-- Google +1 Button -->
+			<div class="itemGooglePlusOneButton">
+				<g:plusone annotation="inline" width="120"></g:plusone>
+				<script type="text/javascript">
+				  (function() {
+				  	window.___gcfg = { lang: 'en' }; // Define button default language here
+				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				    po.src = "{% static 'tohfa/apis.google.com/js/plusone.js' %}";
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script>
+			</div>
+					</div>	
+ </div>
+
+
+
+
+
+			</div>
+						<div class="blog-tags">
+				<span>Tags:</span>
+			 
+									 <a href="{% url 'blog4a11' %}?tag=opencart" title="opencart"><span>opencart</span></a> 	
+									 <a href="{% url 'blogb063' %}?tag=theme" title="theme"><span>theme</span></a> 	
+								 
+			</div>
+			
+						<div class="extra-blogs row">
+						</div>
+			
+						<div class="blog-comment-block">
+							<div id="blog-localengine">
+		<h3>Comments</h3>
+		
+		<div class="comments">
+								</div>
+
+		<h3>Leave your comment</h3>
+		<form class="form-horizontal" method="post" id="comment-form" action="{% url 'nullam_ullamcorper_nisl_quis_ornare_molestie_b66' %}" onsubmit="return false;">
+			<div class="form-group">
+				<label class="col-lg-3 control-label" for="inputFullName">Full Name</label>
+				<div class="col-lg-9">
+					<input type="text" name="user" placeholder="Enter your full name" id="inputFullName" class="form-control">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-lg-3 control-label" for="inputEmail">Email</label>
+				<div class="col-lg-9">
+					<input type="text" name="email"  placeholder="Enter your email" id="inputEmail" class="form-control">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-lg-3 control-label" for="inputComment">Comment</label>
+				<div class="col-lg-9">
+					<textarea type="text" name="comment" rows="6"  placeholder="Enter your comment" id="inputComment" class="form-control"></textarea>
+				</div>
+			</div>
+			 <div class="form-group">
+			 	<label class="col-lg-3 control-label" for="inputEmail">Captcha</label>
+			 	<div class="col-lg-8 col-md-8 ipts-captcha">
+			 		 <img src="nullam-ullamcorper-nisl-quis-ornare-molestie-b6680b3.jpg?captchaimage=1" class="comment-capcha-image" align="left"/>
+				 	<input class="form-control" type="text" name="captcha" value="" size="10"  />
+				</div>
+			 </div>
+			 <input type="hidden" name="id_leoblog_blog" value="66">
+			<div class="form-group">
+				<div class="col-lg-9 col-lg-offset-3"><button class="btn btn-default" name="submitcomment" type="submit">Submit</button></div>
+			</div>
+		</form>
+</div>
+						</div>	
+			
+		</div>
+	</div>
+ 									</section>
+
+
+                	</div>
+				</div>
+            </section>
+{% include 'tohfa/footer.html' %}
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login?back=my-account by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:34:01 GMT -->
+</html>

@@ -1,0 +1,112 @@
+
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+    
+
+	<body id="category" class="category category-7 category-husband lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+							{% include 'tohfa/header.html' %}
+
+		
+							            
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<a href="{% url  'cards' %}" title="cards">cards</a><span class="navigation-pipe">></span><a href="{% url 'sub_catagory' 'relations' %}" title="relations">relations</a><span class="navigation-pipe">></span>husband
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+						
+			<!-- Content -->
+			<section id="columns" class="columns-container">
+				<div class="container">
+										<div class="row">
+                                                
+                    						<!-- Left -->
+<section id="left_column" class="column sidebar col-md-3" role="navigation">
+		           
+        {% include 'tohfa/leftbar2.html' %}
+
+<!-- Block layered navigation module -->
+<div id="layered_block_left" class="block">
+	<h4 class="title_block">Catalog</h4>
+	<div class="block_content clearfix">
+		<form action="#" id="layered_form">
+			<div>
+																										<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Availability</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_quantity_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_quantity_0" class="col-lg-12 col-md-12 layered_filter_ul">
+																																																																																										</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Condition</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_condition_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_condition_0" class="col-lg-12 col-md-12 layered_filter_ul">
+																																																																																																													</ul>
+					</div>
+												</div>
+			<input type="hidden" name="id_category_layered" value="7" />
+																			</form>
+	</div>
+	<div id="layered_ajax_loader" style="display: none;">
+		<p>
+			<img src="{% static 'tohfa/img/loader.gif' %}" alt="" />
+			<br />Loading...
+		</p>
+	</div>
+</div>
+<!-- /Block layered navigation module -->
+   
+
+</section>
+<!-- Center -->
+<section id="center_column" class="col-md-9">
+  
+	
+
+	    				<div class="content_scene_cat">
+            	                     <!-- Category image -->
+                    <div class="content_scene_cat_bg scene_cat">
+												<div class="image">
+                    		<img class="img-responsive" src="{% static 'tohfa/c/7-category_default/blouses.jpg' %}" alt="husband" title="husband" id="categoryImage"  /> 
+						</div>
+                    	                                                    <div class="cat_desc">                            
+                                                            <div class="rte">Match your favorites husband with the right sorry for the perfect look.</div>
+                                                        </div>
+                                             </div>
+                              </div>
+				<h1 class="page-heading">
+            <span class="cat-name">
+                husband&nbsp;            </span>
+            <small class="heading-counter">There are no products in this category.</small>
+        </h1>
+													</section>
+
+
+                	</div>
+				</div>
+            </section>
+               {% include 'tohfa/footer.html' %}
+						
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:30:21 GMT -->
+</html>

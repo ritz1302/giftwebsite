@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+	<body id="module-leoblog-category" class="module-leoblog-category hide-right-column lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+			{% include 'tohfa/header.html' %}
+
+		
+							            
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<a href="{% url 'blog' %}">Blog</a><span class="navigation-pipe">></span>Category 1
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+						
+			{% include 'tohfa/leftbar.html' %}
+
+<section id="center_column" class="col-md-9">
+  
+	    <div id="blog-category" class="blogs-container">
+        	<div class="inner">
+		
+					<div class="panel panel-default">
+				<div class="panel-body">
+											<div class="row">
+							<div class="category-image col-xs-12 col-sm-12 col-lg-4 col-md-4 text-center">
+								<img src="{% static 'tohfa/modules/leoblog/img/c/category-3.jpg' %}" class="img-responsive" />
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-8 category-info caption">
+								<p>Odio ut pretium ligula quam Vestibulum consequat convallis fringilla Vestibulum nulla. Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla interdum mauris tempor congue</p>
+							</div>	
+						</div>	
+										 
+				</div>
+			</div> 
+		
+		
+		<div class="clearfix"></div>
+	 
+			    	<div class="alert alert-warning">Sorry, We are updating data, please come back late!!!!</div>
+	      
+	      
+	</div>
+</div>
+								</section>
+
+
+                	</div>
+				</div>
+            </section>
+{% include 'tohfa/footer.html' %}
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login?back=my-account by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:34:01 GMT -->
+</html>

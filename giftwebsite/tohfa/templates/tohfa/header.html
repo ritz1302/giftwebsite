@@ -1,0 +1,712 @@
+		{% load staticfiles %}
+        
+        <header id="header">
+				<section class="header-container">
+					<div id="topbar">
+						<div class="banner">
+							<div class="container">
+								<div class="row">
+									
+								</div>
+							</div>
+						</div>
+						<div class="nav">
+							<div class="container">
+								<div class="inner">
+										<nav class="clearfix"><script type="text/javascript">
+/* Blockusreinfo */
+	
+$(document).ready( function(){
+	if( $(window).width() < 991 ){
+			 $(".header_user_info").addClass('btn-group');
+			 $(".header_user_info .links").addClass('quick-setting dropdown-menu');
+		}
+		else{
+			$(".header_user_info").removeClass('btn-group');
+			 $(".header_user_info .links").removeClass('quick-setting dropdown-menu');
+		}
+	$(window).resize(function() {
+		if( $(window).width() < 991 ){
+			 $(".header_user_info").addClass('btn-group');
+			 $(".header_user_info .links").addClass('quick-setting dropdown-menu');
+		}
+		else{
+			$(".header_user_info").removeClass('btn-group');
+			 $(".header_user_info .links").removeClass('quick-setting dropdown-menu');
+		}
+	});
+});
+</script>
+<!-- Block user information module NAV  -->
+<div class="header_user_info pull-left">
+	<div data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-cog"></i><span>Top links </span></div>	
+		<ul class="links">
+		<li class="first">
+			<a href="{% url 'loginfd9a' %}" title="My account"><i class="fa fa-user"></i>My Account</a>
+		</li>
+		<li>
+			<a id="wishlist-total" href="{% url 'login842d' %}" title="My wishlists"><i class="fa fa-heart"></i>Wish List</a>
+		</li>
+					<li><a class="login" href="{% url 'loginfd9a' %}" rel="nofollow" title="Login to your customer account">
+				<i class="fa fa-unlock-alt"></i>Sign in
+			</a></li>
+		
+		<li class="last"><a href="{% url 'order' %}" title="Checkout" class="last"><i class="fa fa-share"></i>Checkout</a></li>
+
+				
+		</ul>
+	
+</div>	<div class="topbar-box"><a href="{% url 'blog' %}">Blog</a></div><!-- Block languages module -->
+
+
+	<div class="btn-group pull-left">
+		<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</div>
+			
+
+
+<div id="search_block_top" class="pull-right">
+	<form id="searchbox" method="get" action="{% url 'search' %}" >{% csrf_token %}
+		<div class="input-group">
+		<input type="hidden" name="controller" value="search" />
+		<input type="hidden" name="orderby" value="position" />
+		<input type="hidden" name="orderway" value="desc" />
+		<input class="search_query form-control" type="text" id="search_query_top" name="q" placeholder="Search" value="" />
+			<span class="input-group-btn">
+				<button type="submit" name="submit_search" class="btn btn-outline-inverse">
+				<span class="button-search fa fa-search"><span class="unvisible">Search</span></span>
+			</button></span>
+		</div>
+	</form>
+</div>
+<!-- /Block search module TOP --></nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="header-main">
+						<div class="container">
+							<div class="inner">
+								<div id="header_logo" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+									<a href="{% url 'index' %}" title="Leo Giftshop">
+										<img class="logo img-responsive" src="{% static 'tohfa/img/leo-giftshop-1409908788-1.jpg' %}" alt="Leo Giftshop" width="144" height="56"/>
+									</a>
+								</div>
+								<div id="header_right">
+									<!-- MODULE Block cart -->
+<div class="blockcart_top pull-right ">
+	<div id="cart" class="shopping_cart pull-right">
+		<div class="media heading">
+			<div class="title-cart">
+			<span class="fa fa-shopping-cart "></span></div>
+			<div class="cart-inner media-body">
+				<div class="mini-cart">
+					<h4>My Cart</h4>
+					<a href="{% url 'order' %}" title="View my shopping cart" rel="nofollow">
+						<span class="hidden-lg hidden-md hidden-sm hidden-xs ajax_cart_total unvisible">
+													</span>
+						
+						<span class="ajax_cart_quantity unvisible">0</span>
+						<span class="ajax_cart_no_product">0</span>
+						
+						<span class="hidden-lg hidden-md hidden-sm hidden-xs ajax_cart_product_txt unvisible">item</span>
+						<span class="hidden-lg hidden-md hidden-sm hidden-xs ajax_cart_product_txt_s unvisible">item(s)</span>
+											</a>
+				</div>
+			</div>	
+		</div>
+
+
+
+					<div class="cart_block block exclusive">
+				<div class="block_content">
+					<!-- block list of products -->
+					<div class="cart_block_list">
+												<p class="cart_block_no_products">
+							No products
+						</p>
+												<div class="cart-prices">
+							<div class="cart-prices-line first-line">
+								<span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
+																			Free shipping!
+																	</span>
+								<span>
+									Shipping
+								</span>
+							</div>
+																					<div class="cart-prices-line last-line">
+								<span class="price cart_block_total ajax_block_cart_total">$0.00</span>
+								<span>Total</span>
+							</div>
+													</div>
+						<p class="cart-buttons clearfix">
+							<a id="button_order_cart" class="btn btn-warning button-medium button button-small pull-right" href="{% url 'order' %}" title="Check out" rel="nofollow">
+								<span>
+									Check out
+								</span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div><!-- .cart_block -->
+			</div>
+</div>
+
+	<div id="layer_cart">
+		<div class="clearfix">
+			<div class="layer_cart_product col-xs-12 col-md-6">
+				<span class="cross" title="Close window"></span>
+				<h2>
+					<i class="fa fa-ok"></i>Product successfully added to your shopping cart
+				</h2>
+				<div class="product-image-container layer_cart_img">
+				</div>
+				<div class="layer_cart_product_info">
+					<span id="layer_cart_product_title" class="product-name"></span>
+					<span id="layer_cart_product_attributes"></span>
+					<div>
+						<strong class="dark">Quantity</strong>
+						<span id="layer_cart_product_quantity"></span>
+					</div>
+					<div>
+						<strong class="dark">Total</strong>
+						<span id="layer_cart_product_price"></span>
+					</div>
+				</div>
+			</div>
+			<div class="layer_cart_cart col-xs-12 col-md-6">
+				<h2>
+					<!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
+					<span class="ajax_cart_product_txt_s  unvisible">
+						There are <span class="ajax_cart_quantity">0</span> items in your cart.
+					</span>
+					<!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
+					<span class="ajax_cart_product_txt ">
+						There is 1 item in your cart.
+					</span>
+				</h2>
+	
+				<div class="layer_cart_row">
+					<strong class="dark">
+						Total products
+											</strong>
+					<span class="ajax_block_products_total">
+											</span>
+				</div>
+	
+								<div class="layer_cart_row">
+					<strong class="dark">
+						Total shipping&nbsp;					</strong>
+					<span class="ajax_cart_shipping_cost">
+													Free shipping!
+											</span>
+				</div>
+								<div class="layer_cart_row">	
+					<strong class="dark">
+						Total
+											</strong>
+					<span class="ajax_block_cart_total">
+											</span>
+				</div>
+				<div class="button-container">	
+					<span class="continue btn btn-outline button exclusive-medium" title="Continue shopping">
+						<span>
+							Continue shopping
+						</span>
+					</span>
+					<a class="btn btn-warning button pull-right"	href="{% url 'order' %}" title="Proceed to checkout" rel="nofollow">
+						<span>
+							Proceed to checkout
+						</span>
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="crossseling"></div>
+	</div> <!-- #layer_cart -->
+	<div class="layer_cart_overlay"></div>
+
+<!-- /MODULE Block cart -->									
+																			<div id="leo-mainnav">
+												<nav id="cavas_menu"  class="sf-contener leo-megamenu">
+    <div class="" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle btn-outline-inverse" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="leo-top-menu" class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav megamenu"><li class="" >
+						<a href="{% url 'index' %}" target="_self" class="has-category"><span class="menu-title">Home</span></a></li><li class="full-width parent dropdown aligned-center " >
+                    <a href="#" class="dropdown-toggle has-category" data-toggle="dropdown" target="_self"><span class="menu-title">Features</span><b class="caret"></b></a><div class="dropdown-sub dropdown-menu"  style="width:790px" ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-4" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-links">
+		<div class="menu-title">
+		Block link
+	</div>
+		<div class="widget-inner">	
+		<div id="tabs721415466" class="panel-group">
+			<ul class="nav-links">
+				  
+					<li ><a href="#link1" >Vivamus non nisl ut</a></li>
+				  
+					<li ><a href="#link2" >Custom Module</a></li>
+				  
+					<li ><a href="#link3" >Typography</a></li>
+				  
+					<li ><a href="#" >Proin ac sapien ut</a></li>
+				  
+					<li ><a href="#" >Typography</a></li>
+				  
+					<li ><a href="#" >Donec magna diam</a></li>
+				  
+					<li ><a href="#link1" ></a></li>
+				  
+					<li ><a href="#link1" ></a></li>
+				  
+					<li ><a href="#link1" ></a></li>
+							</ul>
+		</div>
+	</div>
+</div>
+
+
+</div></div></div><div class="mega-col col-sm-4" > <div class="mega-col-inner "><div class="leo-widget"> <div class="widget-products">
+		<div class="menu-title">
+		Product Ids
+	</div>
+		<div class="widget-inner">
+		
+				<div class="product-block">
+												
+			
+			 
+
+						 
+
+ 
+							
+							 
+  
+			 <div class="product-container clearfix" itemscope itemtype="http://schema.org/Product">	
+					<div class="image ">
+							<a class="product_img_link"	href="{% url 'single' 10 %}" title="Chronograph Casual" itemprop="url">
+								<img class="replace-2x img-responsive" src="{% static 'tohfa/157-223/165/165-home_default/printed-summer-dress.jpg' %}" alt="Chronograph Casual" title="Chronograph Casual"  itemprop="image" />
+						</a>
+												</div>
+					<div class="product-meta">
+							<h5 itemprop="name" class="name">
+																<a class="product-name" href="{% url 'single' 10 %}" title="Chronograph Casual" itemprop="url" >
+									Chronograph Casual
+								</a>
+							</h5>
+							<p class="product-desc" itemprop="description">
+								Morbi accumsan ipsum velit. Nam nec tellus a odio...
+							</p>	
+															<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+																			<span itemprop="price" class="price product-price">
+											$28.98										</span>
+										<meta itemprop="priceCurrency" content="1" />
+																					<span class="old-price product-price">
+												$30.51
+											</span>
+																							<span class="price-percent-reduction">-5%</span>
+																																		</div>
+													</div>
+				</div>					
+							
+							 
+  
+			 <div class="product-container clearfix" itemscope itemtype="http://schema.org/Product">	
+					<div class="image ">
+							<a class="product_img_link"	href="{% url 'single' 11 %}" title="Morbi accumsan ipsum" itemprop="url">
+								<img class="replace-2x img-responsive" src="{% static 'tohfa/157-223/172/172-home_default/printed-summer-dress.jpg' %}" alt="Morbi accumsan ipsum" title="Morbi accumsan ipsum"  itemprop="image" />
+						</a>
+												</div>
+					<div class="product-meta">
+							<h5 itemprop="name" class="name">
+																<a class="product-name" href="{% url 'single' 11 %}" title="Morbi accumsan ipsum" itemprop="url" >
+									Morbi accumsan ipsum
+								</a>
+							</h5>
+							<p class="product-desc" itemprop="description">
+								Morbi accumsan ipsum velit. Nam nec tellus a odio...
+							</p>	
+															<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+																			<span itemprop="price" class="price product-price">
+											$30.50										</span>
+										<meta itemprop="priceCurrency" content="1" />
+																							</div>
+													</div>
+				</div>					
+							
+							 
+  
+			 <div class="product-container clearfix" itemscope itemtype="http://schema.org/Product">	
+					<div class="image ">
+							<a class="product_img_link"	href="{% url 'single' 12 %}" title="Class aptent taciti socs" itemprop="url">
+								<img class="replace-2x img-responsive" src="{% static 'tohfa/157-223/178/178-home_default/printed-summer-dress.jpg' %}" alt="Class aptent taciti socs" title="Class aptent taciti socs"  itemprop="image" />
+						</a>
+												</div>
+					<div class="product-meta">
+							<h5 itemprop="name" class="name">
+																<a class="product-name" href="{% url 'single' 12 %}" title="Class aptent taciti socs" itemprop="url" >
+									Class aptent taciti socs
+								</a>
+							</h5>
+							<p class="product-desc" itemprop="description">
+								Morbi accumsan ipsum velit. Nam nec tellus a odio...
+							</p>	
+															<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+																			<span itemprop="price" class="price product-price">
+											$30.50										</span>
+										<meta itemprop="priceCurrency" content="1" />
+																							</div>
+													</div>
+				</div>					
+									
+		 
+		</div>
+ 
+		
+
+	</div>
+</div>
+</div></div></div><div class="mega-col col-sm-4" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-html">
+		<div class="menu-title">
+		Custom HTML
+	</div>
+		<div class="widget-inner">
+		<p><img class="img-responsive" src="{% static 'tohfa/themes/leo_giftshop/img/modules/leobootstrapmenu/2.jpg' %}" alt="" /></p>
+<p>Lorem ipsum dolor sit amet optio consectetur adipisicing elit culpa Eveniet laboriosam provident at optio reiciendis culpa ipsum reprehenderit Voluptates amet</p>
+	</div>
+</div>
+</div></div></div></div></div></div></li><li class="" >
+						<a href="{% url 'about_us' %}" target="_self" class="has-category"><span class="menu-title">Contact</span></a></li><li class=" parent dropdown aligned-fullwidth " >
+                    <a href="{% url 'catagory' 'cards' %}" class="dropdown-toggle has-category" data-toggle="dropdown" target="_self"><span class="menu-title">Categories</span><b class="caret"></b></a><div class="dropdown-sub dropdown-menu"  ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-3" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-subcategories">
+		<div class="widget-inner">
+		<div class="menu-title">Gifts</div>
+		<ul>
+							<li class="clearfix">
+					<a href="{% url 'catagory' 'cards' %}" title="relations" class="img">
+						Cards 
+					</a>
+                            <li class="clearfix">
+					<a href="{% url 'catagory' 'cakes' %}" title="relations" class="img">
+						Cakes 
+					</a>
+				</li>
+							<li class="clearfix">
+					<a href="{% url 'sub_catagory' 'personalized cake' %}" title="ocassion" class="img">
+						Personalized Cakes 
+					</a>
+				</li>
+                           <li class="clearfix">
+					<a href="{% url 'catagory' 'teddy_bears' %}" title="ocassion" class="img">
+						Teddy Bears 
+					</a>
+				</li>
+							<li class="clearfix">
+					<a href="{% url 'catagory' 'flowers' %}" title="for_him" class="img">
+						Flowers 
+					</a>
+				</li>
+							<li class="clearfix">
+					<a href="{% url 'sub_catagory' 'bouquet' %}" title="red_velvet" class="img">
+						Bouquet 
+					</a>
+				</li>
+							
+			
+		</ul>
+	</div>
+</div>
+ </div></div></div><div class="mega-col col-sm-3" > <div class="mega-col-inner "><div class="leo-widget"> </div></div></div><div class="mega-col col-sm-3" > <div class="mega-col-inner "><div class="leo-widget"> <div class="widget-products">
+		<div class="menu-title">
+		Product Special
+	</div>
+		<div class="widget-inner">
+		
+				<div class="product-block">
+												
+			
+			 
+
+						 
+
+ 
+							
+							 
+  
+			 <div class="product-container clearfix" itemscope itemtype="http://schema.org/Product">	
+					<div class="image ">
+							<a class="product_img_link"	href="{% url 'single' 17 %}" title="Clearly Chic" itemprop="url">
+								<img class="replace-2x img-responsive" src="{% static 'tohfa/157-223/163/163-home_default/printed-summer-dress.jpg' %}" alt="Clearly Chic" title="Clearly Chic"  itemprop="image" />
+						</a>
+												</div>
+					<div class="product-meta">
+							<h5 itemprop="name" class="name">
+																<a class="product-name" href="{% url 'single' 17 %}" title="Clearly Chic" itemprop="url" >
+									Clearly Chic
+								</a>
+							</h5>
+							<p class="product-desc" itemprop="description">
+								Morbi accumsan ipsum velit. Nam nec tellus a odio...
+							</p>	
+															<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+																			<span itemprop="price" class="price product-price">
+											$28.98										</span>
+										<meta itemprop="priceCurrency" content="1" />
+																					<span class="old-price product-price">
+												$30.51
+											</span>
+																							<span class="price-percent-reduction">-5%</span>
+																																		</div>
+													</div>
+				</div>					
+							
+							 
+  
+			 <div class="product-container clearfix" itemscope itemtype="http://schema.org/Product">	
+					<div class="image ">
+							<a class="product_img_link"	href="{% url 'single' 10 %}" title="Chronograph Casual" itemprop="url">
+								<img class="replace-2x img-responsive" src="{% static 'tohfa/157-223/165/165-home_default/printed-summer-dress.jpg' %}" alt="Chronograph Casual" title="Chronograph Casual"  itemprop="image" />
+						</a>
+												</div>
+					<div class="product-meta">
+							<h5 itemprop="name" class="name">
+																<a class="product-name" href="{% url 'single' 10 %}" title="Chronograph Casual" itemprop="url" >
+									Chronograph Casual
+								</a>
+							</h5>
+							<p class="product-desc" itemprop="description">
+								Morbi accumsan ipsum velit. Nam nec tellus a odio...
+							</p>	
+															<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+																			<span itemprop="price" class="price product-price">
+											$28.98										</span>
+										<meta itemprop="priceCurrency" content="1" />
+																					<span class="old-price product-price">
+												$30.51
+											</span>
+																							<span class="price-percent-reduction">-5%</span>
+																																		</div>
+													</div>
+				</div>					
+							
+							 
+  
+			 <div class="product-container clearfix" itemscope itemtype="http://schema.org/Product">	
+					<div class="image ">
+							<a class="product_img_link"	href="{% url 'single' 19 %}" title="elegant perfume" itemprop="url">
+								<img class="replace-2x img-responsive" src="{% static 'tohfa/157-223/159/159-home_default/printed-chiffon-dress.jpg' %}" alt="elegant perfume" title="elegant perfume"  itemprop="image" />
+						</a>
+												</div>
+					<div class="product-meta">
+							<h5 itemprop="name" class="name">
+																<a class="product-name" href="{% url 'single' 19 %}" title="elegant perfume" itemprop="url" >
+									elegant perfume
+								</a>
+							</h5>
+							<p class="product-desc" itemprop="description">
+								Printed chiffon knee length dress with tank straps. Deep...
+							</p>	
+															<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+																			<span itemprop="price" class="price product-price">
+											$16.40										</span>
+										<meta itemprop="priceCurrency" content="1" />
+																					<span class="old-price product-price">
+												$20.50
+											</span>
+																							<span class="price-percent-reduction">-20%</span>
+																																		</div>
+													</div>
+				</div>					
+									
+		 
+		</div>
+ 
+		
+
+	</div>
+</div>
+</div></div></div><div class="mega-col col-sm-3" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-html">
+		<div class="menu-title">
+		Custom HTML
+	</div>
+		<div class="widget-inner">
+		<p><img class="img-responsive" src="{% static 'tohfa/themes/leo_giftshop/img/modules/leobootstrapmenu/2.jpg' %}" alt="" /></p>
+<p>Lorem ipsum dolor sit amet optio consectetur adipisicing elit culpa Eveniet laboriosam provident at optio reiciendis culpa ipsum reprehenderit Voluptates amet</p>
+	</div>
+</div>
+</div></div></div></div></div></div></li><li class=" parent dropdown  " >
+                    <a href="{% url 'legal_notice' %}" class="dropdown-toggle has-category" data-toggle="dropdown" target="_self"><span class="menu-title">Community</span><b class="caret"></b></a><div class="dropdown-sub dropdown-menu"  style="width:700px" ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-3" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-links">
+		<div class="menu-title">
+		Custom Link
+	</div>
+		<div class="widget-inner">	
+		<div id="tabs499083733" class="panel-group">
+			<ul class="nav-links">
+				  
+					<li ><a href="#link1" >Proin ac sapien ut</a></li>
+				  
+					<li ><a href="#link2" >Headphones</a></li>
+				  
+					<li ><a href="#link3" >Donec magna diam</a></li>
+				  
+					<li ><a href="#" >Module Position</a></li>
+				  
+					<li ><a href="#" >Fully Loaded</a></li>
+				  
+					<li ><a href="#" >Donec magna diam</a></li>
+				  
+					<li ><a href="#link1" ></a></li>
+				  
+					<li ><a href="#link1" ></a></li>
+				  
+					<li ><a href="#link1" ></a></li>
+							</ul>
+		</div>
+	</div>
+</div>
+
+
+</div></div></div><div class="mega-col col-sm-5" > <div class="mega-col-inner "><div class="leo-widget"> <div class="widget-video">
+		<div class="menu-title">
+		Leo Framework
+	</div>
+		<div class="widget-inner">
+		<iframe width="230" height="200" src="http://www.youtube.com/embed/ZROI8ajlw1w" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+</div></div></div><div class="mega-col col-sm-4" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-links">
+		<div class="menu-title">
+		Link Guide
+	</div>
+		<div class="widget-inner">	
+		<div id="tabs1312193901" class="panel-group">
+			<ul class="nav-links">
+				  
+					<li ><a href="#" >Leo Template Control Panel</a></li>
+				  
+					<li ><a href="#" >Leo Mega Menu Module</a></li>
+				  
+					<li ><a href="#" >Leo Slider Layer Module</a></li>
+				  
+					<li ><a href="#" >Leo Framework </a></li>
+				  
+					<li ><a href="#" > Install Prestashop 1.6</a></li>
+				  
+					<li ><a href="#" >Install Theme</a></li>
+				  
+					<li ><a href="#" ></a></li>
+				  
+					<li ><a href="#" ></a></li>
+				  
+					<li ><a href="#" ></a></li>
+							</ul>
+		</div>
+	</div>
+</div>
+
+
+</div></div></div></div><div class="row"><div class="mega-col col-sm-12" > <div class="mega-col-inner "><div class="leo-widget"><div class="widget-html">
+		<div class="widget-inner">
+		<div class="ct_menu">
+<p>58 Kindle Books for <strong>$68.00</strong> or less <a class="shop-now" href="#">Shop now</a></p>
+</div>
+	</div>
+</div>
+</div></div></div></div></div></div></li><li class="parent dropdown  " ><a class="dropdown-toggle has-category" data-toggle="dropdown" href="{% url 'delievery' %}" target="_self"><span class="menu-title">Delivery</span><b class="caret"></b></a><div class="dropdown-menu level1"  ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-12" data-type="menu" ><div class="mega-col-inner "><ul><li class=" " ><a href="#"><span class="menu-title">Lorem ipsum dolor sit</span></a></li><li class="parent dropdown-submenu " ><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu-title">Nam nec tellus a odio</span><b class="caret"></b></a><div class="dropdown-menu level2"  ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-12" data-type="menu" ><div class="mega-col-inner "><ul><li class=" " ><a href="#"><span class="menu-title">Lorem ipsum dolor</span></a></li><li class=" " ><a href="#"><span class="menu-title">Proin ac sapien ut</span></a></li></ul></div></div></div></div></div></li><li class=" " ><a href="#"><span class="menu-title">cosctetur aipiscing</span></a></li></ul></div></div></div></div></div></li></ul>
+        </div>
+    </div>
+</nav>
+
+<script type="text/javascript">
+// <![CDATA[
+	var current_link = "index' %}";
+	//alert(request);
+    var currentURL = window.location;
+    currentURL = String(currentURL);
+    currentURL = currentURL.replace("https:///","").replace("http://","").replace("www.","").replace( /#\w*/, "" );
+    current_link = current_link.replace("https:///","").replace("http://","").replace("www.","");
+    isHomeMenu = 0;
+    if($("body").attr("id")=="index") isHomeMenu = 1;
+    $(".megamenu > li > a").each(function() {
+        menuURL = $(this).attr("href").replace("https:///","").replace("http://","").replace("www.","").replace( /#\w*/, "" );
+		if( (currentURL == menuURL) || (currentURL.replace(current_link,"") == menuURL) || isHomeMenu){
+			$(this).parent().addClass("active");
+            return false;
+		}
+    });
+// ]]>
+</script>
+<script type="text/javascript">
+    (function($) {
+        $.fn.OffCavasmenu = function(opts) {
+            // default configuration
+            var config = $.extend({}, {
+                opt1: null,
+                text_warning_select: "Please select One to remove?",
+                text_confirm_remove: "Are you sure to remove footer row?",
+                JSON: null
+            }, opts);
+            // main function
+            // initialize every element
+            this.each(function() {
+                var $btn = $('#cavas_menu .navbar-toggle');
+                var $nav = null;
+                if (!$btn.length)
+                    return;
+                var $nav = $('<section id="off-canvas-nav" class="leo-megamenu"><nav class="offcanvas-mainnav" ><div id="off-canvas-button"><span class="off-canvas-nav"></span>Close</div></nav></sections>');
+                var $menucontent = $($btn.data('target')).find('.megamenu').clone();
+                $("body").append($nav);
+                $("#off-canvas-nav .offcanvas-mainnav").append($menucontent);
+                $("#off-canvas-nav .offcanvas-mainnav").css('min-height',$(window).height()+30+"px");
+                $("html").addClass ("off-canvas");
+                $("#off-canvas-button").click( function(){
+                        $btn.click();	
+                } );
+                $btn.toggle(function() {
+                    $("body").removeClass("off-canvas-inactive").addClass("off-canvas-active");
+                }, function() {
+                    $("body").removeClass("off-canvas-active").addClass("off-canvas-inactive");
+                });
+            });
+            return this;
+        }
+    })(jQuery);
+    $(document).ready(function() {
+        jQuery("#cavas_menu").OffCavasmenu();
+        $('#cavas_menu .navbar-toggle').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 0);
+            return false;
+        });
+		
+		$(window).resize(function() {
+            if( $(window).width() > 767 ){
+				$("body").removeClass("off-canvas-active").addClass("off-canvas-inactive");
+            }
+        });
+    });
+    $(document.body).on('click', '[data-toggle="dropdown"]' ,function(){
+        if(!$(this).parent().hasClass('open') && this.href && this.href != '#'){
+            window.location.href = this.href;
+        }
+    });
+</script>
+
+										</div>
+																	</div>					
+							</div>
+						</div>
+					</div>
+				</section>
+			</header>

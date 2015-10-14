@@ -1,0 +1,82 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+    
+	<body id="authentication" class="authentication hide-right-column lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+			
+{% include 'tohfa/header.html' %}
+
+		
+							            
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<span class="navigation_page">	Authentication</span>
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+						
+			{% include 'tohfa/leftbar.html' %}
+
+<section id="center_column" class="col-md-9">
+<br><br>
+<div id="noSlide" style="display: block;"><h1 class="page-heading">Create an account</h1>
+
+    
+    <form action="/tohfa/create_account/" enctype="multipart/form-data" method="post" id="account-creation_form" class="std box form-horizontal">{% csrf_token %}
+    
+    <div class="account_creation">
+			<h3 class="page-subheading">Your personal information</h3>
+            <h4>{{ state }}</h4>
+   <ul>
+   <div class="required form-group">
+   <div class="col-sm-6 col-md-6" ><span>
+    {{ form.as_p }}</span></div></div><br></ul>
+    
+    <div class="form-group">
+				<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
+					<div class="checkbox">
+						<input type="checkbox" name="newsletter" id="newsletter" value="1">
+						<label for="newsletter">Sign up for our newsletter!</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
+					<div class="checkbox">
+						<input type="checkbox" name="optin" id="optin" value="1">
+						<label for="optin">Receive special offers from our partners!</label>
+					</div>
+				</div>
+			</div>
+            
+    <button type="submit" name="submitAccount" id="submitAccount" class="btn btn-outline button button-medium">
+				<span>Register</span>
+			</button>
+			<p class="pull-right required"><span><sup>*</sup>Required field</span></p>
+            
+            </div>
+            </form>
+    
+</div>
+
+</section>
+
+
+                	</div>
+				</div>
+            </section>
+{% include 'tohfa/footer.html' %}
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login?back=my-account by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:34:01 GMT -->
+</html>

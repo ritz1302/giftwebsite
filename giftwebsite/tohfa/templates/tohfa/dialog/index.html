@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+	<body id="pagenotfound" class="pagenotfound hide-right-column lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+			{% include 'tohfa/header.html' %}
+
+			
+							            
+						
+			{% include 'tohfa/leftbar.html' %}
+<section id="center_column" class="col-md-9">
+  
+	<div class="pagenotfound">
+	<div class="img-404">
+    	<img src="http://demo4leotheme.com/prestashop/leo_gift_shop_demo/themes/leo_giftshop/img//img-404.jpg" alt="Page not found" />
+    </div>
+	<h1>This page is not available</h1>
+
+	<p>
+		We&#039;re sorry, but the Web address you&#039;ve entered is no longer available.
+	</p>
+
+	<h3>To find a product, please type its name in the field below.</h3>
+	<form action="{% url 'search' %}" method="post" class="std">
+		<fieldset>
+			<div>
+				<label for="search_query">Search our product catalog:</label>
+				<input id="search_query" name="search_query" type="text" class="form-control grey" />
+                <button type="submit" name="Submit" value="OK" class="btn btn-outline button button-small btn-sm"><span>Ok</span></button>
+			</div>
+		</fieldset>
+	</form>
+
+	<div class="buttons"><a class="btn btn-outline button button-medium" href="{% url 'index' %}" title="Home"><span>Home page</span></a></div>
+</div>
+								</section>
+
+
+                	</div>
+				</div>
+            </section>
+{% include 'tohfa/footer.html' %}
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login?back=my-account by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:34:01 GMT -->
+</html>

@@ -1,0 +1,542 @@
+
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+    
+
+	<body id="category" class="category category-3 category-cards lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+			{% include 'tohfa/header.html' %}
+              
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<span class="navigation_page">{{ catagory }}</span>
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+						
+			<!-- Content -->
+			<section id="columns" class="columns-container">
+				<div class="container">
+										<div class="row">
+                                                
+                    						<!-- Left -->
+<section id="left_column" class="column sidebar col-md-3" role="navigation">
+		<!-- Block categories module -->
+<div id="categories_block_left" class="block block-highlighted nopadding">
+	<h4 class="title_block cleafix">
+					{{ catagory }}
+				<span class="fa fa-bars pull-right"></span>
+	</h4>
+	<div class="block_content">
+		<ul class="list-block list-group bullet tree dhtml">
+	{% for item in list2 %}											
+<li >
+	<a href="{% url 'sub_catagory' item.sub_name %}" title="{{ item.sub_name }}">
+		{{ item.sub_name }}
+		 <span id="leo-cat-4" style="display:none" class="leo-qty"></span>
+	</a>
+    {% for j in list4 %}{% if item.id == j %}
+            <ul>
+            {% for i in list3 %}
+            	{% if i.sub_catagory.sub_name == item.sub_name  %}								
+<li >
+	<a href="{% url 'sub_sub_catagory' i %}" title="{{ i }}">
+		 {{ i }}
+		 <span id="leo-cat-5" style="display:none" class="leo-qty"></span>
+	</a>
+	</li>
+{% endif %}
+ 
+{% endfor %}
+			</ul>{% endif %}{% endfor %}
+	</li>
+{% endfor %}
+			</ul>
+	</div>
+</div>
+
+{% include 'tohfa/leftbar2.html' %}
+        
+<!-- Block layered navigation module -->
+<div id="layered_block_left" class="block">
+	<h4 class="title_block">Catalog</h4>
+	<div class="block_content clearfix">
+		<form action="#" id="layered_form">
+			<div>
+																										<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Categories</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_category_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_category_0" class="col-lg-12 col-md-12 layered_filter_ul">
+	{% for item in list2 %}																																											<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_category_4" id="layered_category_4" value="4" /> 
+																						<label for="layered_category_4">
+																								<a href="{% url 'sub_catagory' item.sub_name %}" rel="nofollow">{{ item.sub_name }}<span> (3)</span></a>
+																							</label>
+										</li>{% endfor %}
+																																							
+																																															</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Compositions</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_id_feature_5"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_id_feature_5" class="col-lg-12 col-md-12 layered_filter_ul">
+																																												<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_1" id="layered_id_feature_1" value="1_5" /> 
+																						<label for="layered_id_feature_1">
+																								<a href="{% url 'catagory' 'cards' %}#compositions-polyester">Polyester<span> (16)</span></a>
+																							</label>
+										</li>
+																																							<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_3" id="layered_id_feature_3" value="3_5" /> 
+																						<label for="layered_id_feature_3">
+																								<a href="{% url 'catagory' 'cards' %}#compositions-viscose">Viscose<span> (2)</span></a>
+																							</label>
+										</li>
+																																															</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Styles</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_id_feature_6"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_id_feature_6" class="col-lg-12 col-md-12 layered_filter_ul">
+																																												<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_11" id="layered_id_feature_11" value="11_6" /> 
+																						<label for="layered_id_feature_11">
+																								<a href="{% url 'catagory' 'cards' %}#styles-casual">Casual<span> (2)</span></a>
+																							</label>
+										</li>
+																																							<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_13" id="layered_id_feature_13" value="13_6" /> 
+																						<label for="layered_id_feature_13">
+																								<a href="{% url 'catagory' 'cards' %}#styles-girly">Girly<span> (16)</span></a>
+																							</label>
+										</li>
+																																															</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Properties</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_id_feature_7"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_id_feature_7" class="col-lg-12 col-md-12 layered_filter_ul">
+																																												<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_21" id="layered_id_feature_21" value="21_7" /> 
+																						<label for="layered_id_feature_21">
+																								<a href="{% url 'catagory' 'cards' %}#properties-maxi_dress">Maxi Dress<span> (2)</span></a>
+																							</label>
+										</li>
+																																							<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_20" id="layered_id_feature_20" value="20_7" /> 
+																						<label for="layered_id_feature_20">
+																								<a href="{% url 'catagory' 'cards' %}#properties-midi_dress">Midi Dress<span> (2)</span></a>
+																							</label>
+										</li>
+																																							<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_id_feature_19" id="layered_id_feature_19" value="19_7" /> 
+																						<label for="layered_id_feature_19">
+																								<a href="{% url 'catagory' 'cards' %}#properties-short_dress">Short Dress<span> (14)</span></a>
+																							</label>
+										</li>
+																																															</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Availability</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_quantity_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_quantity_0" class="col-lg-12 col-md-12 layered_filter_ul">
+																																																															<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_quantity_1" id="layered_quantity_1" value="1" /> 
+																						<label for="layered_quantity_1">
+																								<a href="{% url 'catagory' 'cards' %}#availability-in_stock" rel="nofollow">In stock<span> (18)</span></a>
+																							</label>
+										</li>
+																																															</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Manufacturer</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_manufacturer_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_manufacturer_0" class="col-lg-12 col-md-12 layered_filter_ul">
+																																												<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_manufacturer_8" id="layered_manufacturer_8" value="8" /> 
+																						<label for="layered_manufacturer_8">
+																								<a href="{% url 'catagory' 'cards' %}#manufacturer-at_nulla_id_tincidunt_ut_sed_semper" rel="nofollow">At Nulla id tincidunt ut sed semper<span> (1)</span></a>
+																							</label>
+										</li>
+																																							<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_manufacturer_1" id="layered_manufacturer_1" value="1" /> 
+																						<label for="layered_manufacturer_1">
+																								<a href="{% url 'catagory' 'cards' %}#manufacturer-fashion_manufacturer" rel="nofollow">Fashion Manufacturer<span> (17)</span></a>
+																							</label>
+										</li>
+																																															</ul>
+					</div>
+																											<div class="layered_filter">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Condition</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_condition_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_condition_0" class="col-lg-12 col-md-12 layered_filter_ul">
+																																												<li class="nomargin hiddable col-lg-6 col-md-6">
+																							<input type="checkbox" class="checkbox" name="layered_condition_new" id="layered_condition_new" value="new" /> 
+																						<label for="layered_condition_new">
+																								<a href="{% url 'catagory' 'cards' %}#condition-new" rel="nofollow">New<span> (18)</span></a>
+																							</label>
+										</li>
+																																																																																					</ul>
+					</div>
+																											<div class="layered_price">
+						                        <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Price</span>
+                            <!--<span class="layered_close">
+                            	<a href="#" rel="ul_layered_price_0"></a>
+                            </span>-->
+						</div>
+						<ul id="ul_layered_price_0" class="col-lg-12 col-md-12 layered_filter_ul">
+																								
+<script type="text/javascript">function outputUpdate(vol) {
+	document.querySelector('#volume').value = vol;
+}</script><label for="fader">Range: $10 - $100</label>
+<input type="range" min="10" max="100" value="1" id="fader" step="1" oninput="outputUpdate(value)" list="volsettings">
+<datalist id="volsettings">
+	<option>10</option>
+	<option>20</option>
+	<option>40</option>
+	<option>60</option>
+	<option>80</option>
+	<option>100</option>
+</datalist>
+<output for="fader" id="volume">10</output>
+
+
+																												</ul>
+					</div>
+												</div>
+			<input type="hidden" name="id_category_layered" value="3" />
+																																																													</form>
+	</div>
+	<div id="layered_ajax_loader" style="display: none;">
+		<p>
+			<img src="{% static 'tohfa/img/loader.gif' %}" alt="" />
+			<br />Loading...
+		</p>
+	</div>
+</div>
+<!-- /Block layered navigation module -->
+
+</section>
+<!-- Center -->
+<section id="center_column" class="col-md-9">
+  
+	
+
+	    				<div class="content_scene_cat">
+            	                     <!-- Category image -->
+                    <div class="content_scene_cat_bg scene_cat">
+												<div class="image">
+                    		<img class="img-responsive" src="{% static 'tohfa/c/3-category_default/women.jpg' %}" alt="{{ catagory }}" title="{{ catagory }}" id="categoryImage"  /> 
+						</div>
+                    	                                                    <div class="cat_desc">                            
+                                                            <div class="rte"><p>Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit amet dictum ligula lorem non nisl. Ut vitae nibh id massa vulputate...</p></div>
+                                                        </div>
+                                             </div>
+                              </div>
+				<h1 class="page-heading product-listing">
+            <span class="cat-name">
+                {{ caatgory }}&nbsp;            </span>
+            <small class="heading-counter">There are 18 products.</small>
+        </h1>
+		        		<!-- Subcategories -->
+		<div id="subcategories">
+			<h4 class="page-subheading">Subcategories</h4>			
+			<div class="clearfix row">
+            {% for item in list2 %}
+							<div class="col-md-3 col-xs-6 col-sp-12">
+                	<div class="subcategories scene_cat">
+                		<div class="image">
+							<a href="{% url 'sub_catagory' item.sub_name %}" title="{{ item.sub_name }}" class="img">
+															<img class="replace-2x img-responsive" src="{% static 'tohfa/c/4-category_default/tops.jpg' %}" alt=""/>
+													</a>
+                   		</div>
+						<h5 class="cat-name" ><a href="{% url 'sub_catagory' item.sub_name %}">{{ item.sub_name }}</a></h5>
+													<div class="cat-desc"><p>Choose from Brother, relations, husband, short sleeves, long sleeves, tank relations, 3/4 sleeves and more.</p>
+<p>Find the cut that suits you the best!</p></div>
+											</div>
+				</div>{% endfor %}
+							
+						</div>
+
+		</div>
+						
+			<div class="content_sortPagiBar clearfix">
+	<div class="sortPagiBar clearfix row">					
+			<div class="col-md-10 col-sm-8 col-xs-6">				
+				<div class="sort">
+				<div class="display hidden-xs btn-group pull-left">
+	<div id="grid"><a rel="nofollow" href="#" title="Grid"><i class="fa fa-th-large"></i></a></div>
+    <div id="list"><a rel="nofollow" href="#" title="List"><i class="fa fa-th-list"></i></a></div>
+</div>
+
+<form id="productsSortForm" action="{% url 'catagory' 'cards' %}" class="productsSortForm form-horizontal pull-right hidden-xs ">
+	<div class="select">
+		<label for="selectProductSort">Sort by</label>					
+		<select class="form-control selectProductSort" id="selectProductSort">
+			<option value="position:asc" selected="selected">--</option>
+							<option value="price:asc" >Price: Lowest first</option>
+				<option value="price:desc" >Price: Highest first</option>
+						<option value="name:asc" >Product Name: A to Z</option>
+			<option value="name:desc" >Product Name: Z to A</option>
+							<option value="quantity:desc" >In stock</option>
+						<option value="reference:asc" >Reference: Lowest first</option>
+			<option value="reference:desc" >Reference: Highest first</option>
+		</select>
+		
+	</div>
+</form>
+<!-- /Sort products -->
+			
+	
+											<!-- nbr product/page -->
+			<form action="{% url 'catagory' 'cards' %}" method="get" class="nbrItemPage pull-right">
+			<div class="clearfix selector1">
+												<label for="nb_item">
+					Show
+				</label>
+																																	<input type="hidden" name="id_category" value="3" />
+																			<select class="form-control" name="n" id="nb_item" >
+																							<option value="12" selected="selected">12</option>
+																														<option value="24" >24</option>
+																																						</select>
+				<span>per page</span>
+			</div>
+		</form>
+		<!-- /nbr product/page -->
+									
+				</div>
+			</div>
+			<div class="product-compare col-md-2 col-sm-4 col-xs-6">
+					<form method="post" action="http://demo4leotheme.com/prestashop/leo_gift_shop_demo/en/products-comparison" class="compare-form">
+		<button type="submit" class="btn btn-outline button button-medium bt_compare bt_compare" disabled="disabled">
+			<span>Compare (<strong class="total-compare-val">0</strong>)</span>
+		</button>
+		<input type="hidden" name="compare_product_count" class="compare_product_count" value="0" />
+		<input type="hidden" name="compare_product_list" class="compare_product_list" value="" />
+	</form>
+			
+		
+		
+		
+	
+			</div>
+    </div>
+</div>
+
+    
+	
+                    	                	
+		
+	
+	<!-- Products list -->
+	<div class="product_list grid row ">			
+		
+		{% for item in list1 %}
+							
+		<div class="ajax_block_product col-sp-12 col-xs-12 col-sm-6 col-md-4				 last-item-of-tablet-line
+				 last-item-of-mobile-line
+				">
+			    
+<div class="product-container text-center product-block" itemscope itemtype="http://schema.org/Product">
+	<div class="left-block">
+		<div class="product-image-container image">
+		   
+			<a class="product_img_link"	href="{% url 'single' item.product_id %}" title="{{ item.item_name }}" itemprop="url">
+				<img class="replace-2x img-responsive" src="{{ item.image1.url }}" alt="{{ item.item_name }}" title="{{ item.item_name }}" itemprop="image" />
+				<span class="product-additional" data-idproduct="{{ item.product_id }}"></span>
+			</a>
+            {% if item.discount < 1 %}
+			<span class="sale-box">
+					<span class="sale-label product-label">Sale!</span>
+				</span>{% endif %}
+								</div>
+
+		<div class="functional-buttons clearfix">
+			<div class="action-button">
+								  <div class="button-quick-view">
+					<a class="quick-view btn btn-tooltip" href="{% url 'single' item.product_id %}" rel="#" title="Quick view" >
+						<i class="fa fa-search-plus"></i>
+					</a>
+				 </div>
+												<div class="wishlist">
+					
+
+<a class="btn-tooltip btn addToWishlist wishlistProd_{{ item.product_id }}" href="#" rel="{{ item.product_id }}" onclick="WishlistCart('wishlist_block_list', 'add', '{{ item.product_id }}', false, 1); return false;" data-toggle="tooltip" title="Add to Wishlist">
+		<i class="fa fa-heart"></i>
+</a>
+				</div>
+								
+									<div class="compare">
+						<a class="add_to_compare compare btn btn-tooltip" href="{% url 'single' item.product_id %}" data-id-product="{{ item.product_id }}" title="Add to compare" >
+							<i class="fa fa-refresh"></i>
+						</a>						
+					</div>	
+							</div>
+		</div>
+		<div class="functional-cart-detail">
+				<div class="cart">
+																										<a class="button ajax_add_to_cart_button btn btn-outline" href="#" rel="nofollow" title="Add to cart" data-id-product="{{ item.product_id }}">
+									<i class="fa fa-shopping-cart"></i>
+									<span>Add to cart</span>
+								</a>
+																						</div>
+			</div>	
+		
+		
+	</div>
+	<div class="right-block">
+		<div class="product-meta">
+			<h5 itemprop="name" class="name">
+								<a class="product-name" href="{% url 'single' item.product_id %}" title="{{ item.item_name }}" itemprop="url" >
+					{{ item.item_name }}
+				</a>
+			</h5>
+			 
+
+	<div class="comments_note product-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">	
+		<div class="star_content">
+												<div class="star"></div>
+																<div class="star"></div>
+																<div class="star"></div>
+																<div class="star"></div>
+																<div class="star"></div>
+										<meta itemprop="worstRating" content = "0" />
+            <meta itemprop="ratingValue" content = "0" />
+			<meta itemprop="bestRating" content = "5" />
+		</div>
+		<span class="nb-comments"><span itemprop="reviewCount">0</span> Review(s)</span>
+	</div>
+
+			<div class="product-desc" itemprop="description">
+				{{ item.description }}
+			</div>
+		
+			
+			
+						
+			<div class="product-flags">
+															<span class="online_only label label-warning">Online only</span>
+																			<span class="discount label label-danger">Reduced price!</span>
+								</div>
+		
+												<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability">
+													<span class="available-now">
+								<link itemprop="availability" href="{% url 'http://schema.org/InStock" />In Stock							</span>
+											</div>
+							
+							<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+											<span itemprop="price" class="price product-price">
+							${{ item.price }}						</span>
+						<meta itemprop="priceCurrency" content="USD" />
+													
+							<span class="old-price product-price">
+								${{ item.old_price }}
+							</span>
+															{% if item.discount > 0 %}<span class="price-percent-reduction">-{{ item.discount }}%</span>{% endif %}
+																			
+						
+									</div>
+			
+		</div>
+	</div>
+</div>
+<!-- .product-container> -->
+
+											</div>	
+
+			{% endfor %}
+		
+		
+
+
+		</div>
+
+			
+		
+		
+		
+		
+							
+		
+
+		</div>
+
+
+
+
+
+
+<div class="content_sortPagiBar">
+	<div class="bottom-pagination-content clearfix row">
+		<div class="col-md-10 col-sm-8 col-xs-6 col-sp-12">
+			
+	
+												<!-- Pagination -->
+	
+	<!-- /Pagination -->
+
+		</div>
+		<div class="product-compare col-md-2 col-sm-4 col-xs-6 col-sp-12">
+				<form method="post" action="http://demo4leotheme.com/prestashop/leo_gift_shop_demo/en/products-comparison" class="compare-form">
+		<button type="submit" class="btn btn-outline button button-medium bt_compare bt_compare_bottom" disabled="disabled">
+			<span>Compare (<strong class="total-compare-val">0</strong>)</span>
+		</button>
+		<input type="hidden" name="compare_product_count" class="compare_product_count" value="0" />
+		<input type="hidden" name="compare_product_list" class="compare_product_list" value="" />
+	</form>
+	
+		</div>
+	</div>
+</div>
+
+											</section>
+
+
+                	</div>
+				</div>
+            </section>
+               {% include 'tohfa/footer.html' %}
+						
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:30:21 GMT -->
+</html>

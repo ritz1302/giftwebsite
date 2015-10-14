@@ -1,0 +1,120 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+{% include 'tohfa/h1.html' %}
+	<body id="module-leoblog-category" class="module-leoblog-category hide-right-column lang_en fullwidth">
+						<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">	{% include 'tohfa/header.html' %}
+
+		
+							            
+							<section id="breadcrumb" class="clearfix">
+					<div class="container container-nopadding">
+						<div class="inner">
+						  
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="{% url 'index' %}" title="Return to Home"><i class="fa fa-home"></i></a>
+			<span class="navigation-pipe" >&gt;</span>
+					<a href="{% url 'blog' %}">Blog</a><span class="navigation-pipe">></span><a href="{% url 'category1_c26' %}">Category 1</a><span class="navigation-pipe">></span>Sub Category 1
+			</div>
+<!-- /Breadcrumb -->
+						</div>
+					</div>
+				</section>
+{% include 'tohfa/leftbar.html' %}
+
+<section id="center_column" class="col-md-9">
+  
+	    <div id="blog-category" class="blogs-container">
+        	<div class="inner">
+		
+					<div class="panel panel-default">
+				<div class="panel-body">
+											<div class="row">
+							<div class="category-image col-xs-12 col-sm-12 col-lg-4 col-md-4 text-center">
+								<img src="{% static 'tohfa/modules/leoblog/img/c/category-2.jpg' %}" class="img-responsive" />
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-8 category-info caption">
+								<p>Odio ut pretium ligula quam Vestibulum consequat convallis fringilla Vestibulum nulla. Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla interdum mauris tempor congue</p>
+							</div>	
+						</div>	
+										 
+				</div>
+			</div> 
+		
+		
+		<div class="clearfix"></div>
+	 
+					<h3>Recent blog posts</h3>
+						<div class="leading-blog">  
+                        
+								 {% for item in list1 %}
+						
+                        				<div class="nocol-lg-12">
+						<div class="blog-item">
+		<h4><a href="{% url 'single2' item.count %}" title="{{ item.name }}">{{ item.name }}</a></h4>
+		<div class="blog-meta">
+				
+				<span class="blog-cat"> 
+			<span class="icon-list"> In:</span> 
+			<a href="{% url 'sub_category1_c27' %}" title="Sub Category 1">Sub Category 1</a>
+		</span>
+				
+				
+		
+			</div>
+		<div class="blog-image">
+		<img src="{% static 'tohfa/img/leoblog/b/53/870_400/b-blog-1.jpg' %}" title="{{ item.name }}"/>
+	</div>
+	
+	<div class="blog-shortinfo">
+				{{ item.description }}
+						<p>
+			<a href="{% url 'single2' item.count %}" title="{{ item.name }}" class="btn btn-default">Read more</a>
+		</p>
+			</div>
+</div>
+					</div>	
+								{% endfor %}	
+								 
+										
+												</div>
+				 	
+			<div class="top-pagination-content clearfix bottom-line">
+				
+	
+	 
+
+	<!-- Pagination -->
+	<div id="pagination" class="pagination clearfix">
+     
+			<ul class="pagination">
+					<li id="pagination_previous" class="disabled pagination_previous"><span><i class="icon-chevron-left"></i> <b>Previous</b></span></li>
+																	<li class="active current"><span><span>1</span></span></li>
+												<li><a  href="{% url 'sub_category1_c27905b' %}?p=2"><span>2</span></a></li>
+																			<li id="pagination_next" class="pagination_next"><a  href="{% url 'sub_category1_c27905b' %}?p=2"><b>Next</b> <i class="icon-chevron-right"></i></a></li>
+				</ul>
+		</div>
+    
+    <div class="product-count">
+    	    		                        	                        	Showing 1 - 5 of 7 items
+		    </div>
+
+	<!-- /Pagination -->
+
+	        </div>
+	      
+	      
+	</div>
+</div>
+								</section>
+
+
+                	</div>
+				</div>
+            </section>
+{% include 'tohfa/footer.html' %}
+		</section><!-- #page -->
+</body>
+<!-- Mirrored from demo4leotheme.com/prestashop/leo_gift_shop_demo/en/login?back=my-account by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2015 07:34:01 GMT -->
+</html>

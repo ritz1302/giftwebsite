@@ -1,0 +1,46 @@
+
+{% load staticfiles %}
+{% load carton_tags %}
+{% get_cart as cart %}
+{% load mathfilters %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+{% for item in cart.items %}
+			 {{ item }}
+			 <div class="cart-header2">
+				 {% if item.quantity > 1 %}
+ 					 <a href="{% url 'remove_single' item.product.product_id %}">Remove</a>
+        		{% else %}
+      				 <a href="{% url 'remove' item.product.product_id %}">remove</a>
+       			 {% endif %}
+				  <div class="cart-sec simpleCart_shelfItem">
+						<div class="cart-item cyc">
+							 <img src="{{ item.product.image1.url }}" class="img-responsive" alt=""/>
+						</div>
+					   <div class="cart-item-info">
+						<h3><a href="#">{{ item.product }}</a><span>Model No: {{ item.product.product_id }}</span></h3>
+						<ul class="qty">
+							<li><p>Size : 5</p></li>
+							<li><p>Qty : {{item.quantity }}</p></li>
+                            <li><p>Price: {{item.price }}</p></li>
+						</ul>
+						<div class="delivery">
+							 <p>Service Charges : Rs.100.00</p>
+							 <span>Delivered in 2-3 bussiness days</span>
+                             <span><a href="{% url 'empty' %}">empty the cart</a></span>
+							 <div class="clearfix"></div>
+				        </div>	
+					   </div>
+					   <div class="clearfix"></div>
+											
+				  </div>
+			  </div>
+              {% endfor %}		
+</body>
+</html>

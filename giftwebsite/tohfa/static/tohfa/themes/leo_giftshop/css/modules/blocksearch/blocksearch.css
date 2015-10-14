@@ -1,0 +1,79 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/* Button */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+.ac_results {
+  background: white;
+  border: 1px solid #eeeeee;
+  width: 271px;
+  margin-top: -1px;
+}
+.ac_results li {
+  padding: 0 10px;
+  font-weight: normal;
+  color: #686666;
+  font-size: 13px;
+  line-height: 22px;
+}
+.ac_results li.ac_odd {
+  background: white;
+}
+.ac_results li:hover, .ac_results li.ac_over {
+  background: #fbfbfb;
+}
+
+#search_block_top {
+  margin-top: 8px;
+  line-height: 18px;
+}
+#search_block_top form#searchbox {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 192px;
+  border: 1px solid #66494b;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+#search_block_top form#searchbox .search_query {
+  height: 23px;
+  border: 0 none;
+  font-size: 11px;
+  background-color: transparent;
+  font-style: italic;
+}
+#search_block_top form#searchbox .button.button-small {
+  float: left;
+}
+#search_block_top form#searchbox .button.button-small i {
+  margin-right: 0;
+}
+#search_block_top form#searchbox .btn {
+  border: 0 none;
+  padding: 1px 5px;
+  background-color: transparent;
+}
+#search_block_top form#searchbox .btn .fa {
+  color: white;
+}
